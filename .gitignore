@@ -1,2 +1,7 @@
+*
 *.o
+!.gitattributes
+!.gitignore
+!readme.md
+!.gitkeep
 !*.PAS
