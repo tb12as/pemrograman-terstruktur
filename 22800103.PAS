@@ -1,17 +1,20 @@
 program warna_warni;
 uses CRT;
 begin
+	{ white, black, yellow, blue, magenta, cyan }
 	clrscr;
-	textcolor(yellow + blink);
+	textbackground(green);
+
+	textcolor(white + blink);
 	writeln('MATA KULIAH PRAKTIKUM PEMROGRAMAN TERSTURKTUR');
 
 	textcolor(yellow + blink);
 	writeln('PROGRAM STUDI D3 TEKNIK INFORMATIKA');
 
-	textcolor(green);
+	textcolor(blue + blink);
 	writeln('JURUSAN TEKNIK ELEKTRI');
 
-	textcolor(green);
+	textcolor(magenta + blink);
 	writeln('POLITEKNIK NEGERI PONTIANAK');
 
 	readln;
