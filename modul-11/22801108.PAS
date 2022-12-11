@@ -9,4 +9,5 @@ begin
 		sum := sum + i;
 	until(i = 100);
 	writeln('Hasil penjumlahan bilangan genap 1 - 100 : ', sum);
+	readln;
 end.
