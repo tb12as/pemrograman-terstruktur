@@ -1,19 +1,17 @@
 uses crt;
-type arr = array[0..100] of integer;
-var limit, i, angka : integer;
-	fibonacci : arr;
+var limit, angka, angka2, hasil: integer;
 begin
 	clrscr;
-	fibonacci[0] := 0; fibonacci[1] := 1; fibonacci[2] := 1;
-	angka := 1;
-	i := 3;
+	angka := 0;
+	angka2 := 1;
+	hasil := 1;
 	write('Masukkan bilangan tertinggi : '); readln(limit);
+	write('Deret bilangan fibonacci : 0 ');
 	repeat
-		angka := fibonacci[i - 1] + fibonacci[i - 2];
-		fibonacci[i] := fibonacci[i - 1] + fibonacci[i - 2];
-		inc(i);
-	until (angka > limit);
-	write('Deret bilangan fibonacci :');
-	for i := 0 to i - 2 do write(' ', fibonacci[i]);
+		write(hasil, ' ');
+		hasil := angka + angka2;
+		angka := angka2;
+		angka2 := hasil;
+	until (hasil > limit);
 	readln;
 end.

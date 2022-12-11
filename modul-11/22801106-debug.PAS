@@ -14,10 +14,7 @@ begin
 	repeat
 		write('Tebakan anda adalah : '); readln(tebak);
 		inc(jumlah_tebak);
-		if tebak <> bilangan then
-		begin
-			writeln('Tebakan salah. coba tebak lagi.');
-		end
+		if tebak <> bilangan then writeln('Tebakan salah. coba tebak lagi.')
 		else
 		begin
 			writeln('Kamu is the best. tebakanmu tepat.');
