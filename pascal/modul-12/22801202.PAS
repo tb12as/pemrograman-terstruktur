@@ -1,11 +1,10 @@
 uses crt;
-type
-    saudara = (Ridha, Izza, Syafiq, Kholilul);
-var
-    nama : saudara;
+type nama = (Ridha, Izza, Syafiq, Kholilul);
+var saudara : nama;
 begin
-    clrscr;
-    for nama := Ridha to Kholilul do
-    writeln('Nilai ordinal ', nama, ' : ', ord(nama));
-    readln;
+     clrscr;
+     writeln('Nilai ordinari Ridha - Kholilul');
+     for saudara := Ridha to Kholilul do
+     writeln(ord(saudara));
+     readln;
 end.
